@@ -10,13 +10,18 @@
   <link rel="icon" type="image/png" href="/images/favicon.png" />
   <style>
     html, body { font-family: 'Roboto', 'Helvetica', sans-serif; padding-top: 1.7rem; }
+    a { color: #596f2f; text-decoration: underline }
     .breadcrumb { padding: 0.25rem  1rem }
-    .breadcrumb a { color: #596f2f; }
-    .headline { padding: 3rem 1.5rem; text-align: center; }
+    .breadcrumb a { text-decoration: none }
+    .headline { padding: 0.5rem 1.5rem; text-align: center; }
     .lead { padding: 1em; }
     .fa-server { padding-right: 0.2em; }
     .fa-arrow-right, .fa-refresh { padding-left: 0.3em; color: #596f2f; }
     .fa-github { padding-left: 0.2em; }
+    #info-blocks {  width: 100%;  margin: 0 auto;  float: none; text-align: center }
+    #info-blocks ul li {  text-align: left }
+    #info-blocks h4 { color: #596f2f; }
+    #info-blocks .alert-success { background-color: #cddcb1; border-color: #596f2f; color: #596f2f; margin-bottom: 1.7em }
   </style>
 </head>
 <body>
@@ -50,17 +55,49 @@
   </ol>
 </div>
 
-<div class="container">
+<div class="container-responsive">
 
   <div class="headline">
     <h1><i class="fa fa-server" style="color:#596f2f" aria-hidden="true"></i>CloudFormation Stacks</h1>
     Versioning, storage and workflow for CloudFormation scripts
     <p class="lead">
-      Test<i class="fa fa-arrow-right" aria-hidden="true"></i>
+      Create<i class="fa fa-arrow-right" aria-hidden="true"></i>
       Publish<i class="fa fa-arrow-right" aria-hidden="true"></i>
+      Document<i class="fa fa-arrow-right" aria-hidden="true"></i>
       Deploy<i class="fa fa-arrow-right" aria-hidden="true"></i>
       Update<i class="fa fa-refresh" aria-hidden="true"></i><br/>
     </p>
+  </div>
+
+  <div id="info-blocks" class="container">
+    <!--<div class="row">-->
+      <!--<div class="col">-->
+        <!--<div class="alert alert-success" role="alert">-->
+          <!--See an example project-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <div class="row">
+      <div class="col">
+        <h4>Features</h4>
+          <ul>
+            <li>Manage scripts as components</li>
+            <li>S3 storage for public or private access</li>
+            <li>Workflow provided by a Gradle plugin</li>
+            <li><a href="https://github.com/cfn-stacks">Open source</a> and Apache Licensed</li>
+          </ul>
+      </div>
+      <div class="col">
+        <h4>Usage</h4>
+        <ul>
+          <li>Creation through composition</li>
+          <li>Publish versioned components</li>
+          <li>Docs created with <a href="http://asciidoctor.org/">Asciidoctor</a></li>
+          <li>Deploy using plugin tasks</li>
+          <li>Update or use change sets to preview</li>
+        </ul>
+      </div>
+    </div>
   </div>
 
 </div>
