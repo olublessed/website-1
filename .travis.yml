@@ -1,0 +1,6 @@
+language: bash
+script:
+  - ./publish-docs.sh
+branches:
+  only:
+  - master
